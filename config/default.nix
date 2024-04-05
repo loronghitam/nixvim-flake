@@ -14,6 +14,7 @@
     ./completion.nix
     ./format.nix
     ./lint.nix
+    ./lazygit.nix
     #    ./debug.nix
   ];
 
