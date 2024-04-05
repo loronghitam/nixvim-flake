@@ -11,6 +11,16 @@
       };
     }
     {
+      key = "jk";
+      mode = "i";
+      action = "<ESC>";
+      options = {
+        silent = true;
+        noremap = true;
+        desc = "Exit insert mode with jk";
+      };
+    }
+    {
       key = "<leader>u";
       mode = "n";
       action = "<cmd>UndotreeToggle<CR>";
