@@ -15,6 +15,8 @@
     ./format.nix
     ./lint.nix
     ./lazygit.nix
+    #    ./comment.nix
+
     #    ./debug.nix
   ];
 
@@ -48,8 +50,10 @@
       undotree.enable = true;
       fugitive.enable = true;
       nvim-tree.enable = true;
+      auto-save.enable = true;
     };
     extraPackages = with pkgs; [
+      vimPlugins.comment-nvim
       # Formatters
       alejandra
       asmfmt

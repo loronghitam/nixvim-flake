@@ -4,9 +4,11 @@
       enable = true;
       snippet.expand = "luasnip";
       mapping = {
-        "<C-d>" = "cmp.mapping.scroll_docs(-4)";
-        "<C-f>" = "cmp.mapping.scroll_docs(4)";
-        "<C-e>" = "cmp.mapping.close()";
+        "<C-k>" = "cmp.mapping.select_prev_item()";
+        "<C-j>" = "cmp.mapping.select_next_item()";
+        "<C-b>" = "cmp.mapping.scroll_docs(-4)";
+        #"<C-f>" = "cmp.mapping.scroll_docs(4)";
+        "<C-e>" = "cmp.mapping.abort()";
         "<C-space>" = "cmp.mapping.complete()";
         "<C-y>" = {
           action = "cmp.mapping.confirm({
