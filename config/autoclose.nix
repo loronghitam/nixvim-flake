@@ -1,7 +1,7 @@
 {pkgs, ...}: {
   extraPlugins = with pkgs.vimPlugins; [
     {
-      plugin = autoclose;
+      plugin = autoclose-nvim;
       config = "lua require(\"autoclose\").setup()";
     }
   ];

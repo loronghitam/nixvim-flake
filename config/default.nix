@@ -44,7 +44,7 @@
     };
 
     plugins = {
-      gitsigns.enable = true;
+      #      gitsigns.enable = true;
       oil.enable = true;
       undotree.enable = true;
       fugitive.enable = true;
