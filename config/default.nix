@@ -15,9 +15,8 @@
     ./format.nix
     ./lint.nix
     ./lazygit.nix
-    #    ./comment.nix
-
-    #    ./debug.nix
+    ./comment.nix
+    ./autoclose.nix
   ];
 
   config = {
@@ -53,7 +52,6 @@
       auto-save.enable = true;
     };
     extraPackages = with pkgs; [
-      vimPlugins.comment-nvim
       # Formatters
       alejandra
       asmfmt
