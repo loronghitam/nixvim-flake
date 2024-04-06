@@ -17,6 +17,7 @@
     ./lazygit.nix
     ./comment.nix
     ./autoclose.nix
+    ./ufo.nix
   ];
 
   config = {
@@ -49,7 +50,7 @@
       undotree.enable = true;
       fugitive.enable = true;
       nvim-tree.enable = true;
-      auto-save.enable = true;
+      auto-save.enable = false;
     };
     extraPackages = with pkgs; [
       # Formatters
